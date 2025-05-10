@@ -30,6 +30,7 @@ Feature: Login with Valid Credentials
     And user select the LoanPurposeItem
     And user click on CeateLeadBtn
     And user click on LeadBtn
+    And user click the 
 
 
 
