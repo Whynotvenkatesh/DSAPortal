@@ -29,8 +29,6 @@ Feature: Login with Valid Credentials
     And user click the LoanPurposeDropdown
     And user select the LoanPurposeItem
     And user click on CeateLeadBtn
-    And user click on LeadBtn
-    And Test user test
 
 
 
