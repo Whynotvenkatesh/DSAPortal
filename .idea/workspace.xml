@@ -5,14 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="086ad040-fefd-4e60-bd39-35ac47c7d2d6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Features/LoginOtp.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LoginwithOtp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StepDefinations/LoginOtpStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasePage/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasePage/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BasePage/BaseClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BasePage/Basepage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/DashBoard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/LeadDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/PartnerDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/DashBoardStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/LoginStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/PartnerDetailsStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestRunner/Testrunner.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,12 +48,79 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Feature: Login.executor": "Run",
+    "Cucumber Java.Feature: LoginOtp.executor": "Run",
+    "Cucumber Java.Scenario: Scenario: Successful Login with Valid Emailid.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Automate__DSA123",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/venkateshk/Documents/GitHub/DSAPortal"
   }
 }]]></component>
+  <component name="RunManager" selected="Cucumber Java.Feature: LoginOtp">
+    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/java/Features/Login.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="DSAPortal" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: LoginOtp" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/java/Features/LoginOtp.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="DSAPortal" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: LoginOtp" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Scenario: Successful Login with Valid Emailid" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/java/Features/LoginOtp.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="DSAPortal" />
+      <option name="NAME_FILTER" value="^Scenario\: Successful Login with Valid Emailid$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Scenario\: Successful Login with Valid Emailid$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Scenario: Successful Login with Valid Emailid" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Feature: LoginOtp" />
+        <item itemvalue="Cucumber Java.Scenario: Scenario: Successful Login with Valid Emailid" />
+        <item itemvalue="Cucumber Java.Feature: Login" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
