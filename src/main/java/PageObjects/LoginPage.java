@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.time.Duration;
 
+
+
 public class LoginPage extends BaseClass {
     WebDriver driver;
 
@@ -22,6 +24,7 @@ public class LoginPage extends BaseClass {
     }
 
     // Elements
+
 
     @FindBy(xpath = "//input[@id='email']")
     WebElement txtUsername;
