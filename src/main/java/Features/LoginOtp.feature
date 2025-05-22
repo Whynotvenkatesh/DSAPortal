@@ -1,8 +1,8 @@
-Feature : Verify DSA Login with OTP
+Feature: Verify DSA Login with OTP
+  Scenario: Successful Login with Valid Emailid
+    Given the user navigates to loginhomepage
+    When user enter email as "vaibhav.kohli@creditsaison-in.com"
+    And user enters the OTP
+    Then user clicks on the Verify button
 
-  Scenario: Scenario: Successful Login with Valid Emailid
-    Given the user navigates to login page
-    When user enters email as "vaibhav.kohli@creditsaison-in.com"
-    And the user clicks on the SendOtp button
-    And user clicks on the InputOtp button
-    Then use click the Verify Button
+

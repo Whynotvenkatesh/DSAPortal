@@ -5,8 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.sql.Driver;
+import java.time.Duration;
 
 public class LoginwithOtp  extends BaseClass
 {
@@ -20,7 +23,8 @@ public class LoginwithOtp  extends BaseClass
 
     // Elements
 
-    @FindBy(xpath = "//input[@id='email']")
+    //@FindBy(xpath = "//input[@id='email']")
+    @FindBy(xpath = " //input[@placeholder='Registered Email ID']")
     WebElement txtUsername;
 
     @FindBy(xpath = "//button[normalize-space()='Send OTP']")
@@ -50,6 +54,8 @@ public class LoginwithOtp  extends BaseClass
 
     public void setVerifyOtpbtn()
     {
-        VerifyOtpbtn.click();
+        //VerifyOtpbtn.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(VerifyOtpbtn)).click();
     }
 }

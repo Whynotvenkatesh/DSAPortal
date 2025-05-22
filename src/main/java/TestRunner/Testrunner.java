@@ -21,4 +21,12 @@ public class Testrunner
 
 }
 
+/*
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/resources/features",
+        glue = {"StepDefinations"}, // <- Must match your package name exactly
+        plugin = {"pretty", "html:target/cucumber-reports"}
+)
+*/
 

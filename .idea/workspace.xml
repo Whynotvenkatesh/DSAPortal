@@ -5,23 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="086ad040-fefd-4e60-bd39-35ac47c7d2d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Features/LoginOtp.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LoginwithOtp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StepDefinations/LoginOtpStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StepDefinations/LoginStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BasePage/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasePage/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BasePage/BaseClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BasePage/Basepage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/DashBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/LeadDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/PartnerDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/DashBoardStep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/LoginStep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/PartnerDetailsStep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestRunner/Testrunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Features/LoginOtp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Features/LoginOtp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LoginwithOtp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LoginwithOtp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinations/LoginOtpStep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestRunner/Testrunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestRunner/Testrunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +46,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Automate__DSA123",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/venkateshk/Documents/GitHub/DSAPortal"
+    "last_opened_file_path": "/Users/venkateshk/Documents/GitHub/DSAPortal",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "build.tools"
   }
 }]]></component>
   <component name="RunManager" selected="Cucumber Java.Feature: LoginOtp">
@@ -116,8 +112,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: LoginOtp" />
-        <item itemvalue="Cucumber Java.Scenario: Scenario: Successful Login with Valid Emailid" />
         <item itemvalue="Cucumber Java.Feature: Login" />
+        <item itemvalue="Cucumber Java.Scenario: Scenario: Successful Login with Valid Emailid" />
       </list>
     </recent_temporary>
   </component>
