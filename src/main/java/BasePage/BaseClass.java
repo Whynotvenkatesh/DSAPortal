@@ -30,7 +30,6 @@ import PageObjects.DashBoard;
 import PageObjects.LoginPage;
 import PageObjects.LoginwithOtp;
 import PageObjects.PartnerDetails;
-import StepDefinations.LoginOtpStep;
 import StepDefinations.PartnerDetailsStep;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -46,7 +45,7 @@ public class BaseClass
     public static DashBoard db;
     public static PartnerDetails parnter;
 
-    public  static LoginwithOtp LoginOtp;
+    public  static LoginwithOtp loginuser;
 
 
     public static void launchdriver()  {
@@ -68,7 +67,7 @@ public class BaseClass
         db=new DashBoard(driver);
         parnter=new PartnerDetails(driver);
 
-        LoginOtp=new LoginwithOtp(driver);
+        loginuser=new LoginwithOtp(driver);
 
 
 
