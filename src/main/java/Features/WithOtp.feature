@@ -13,3 +13,21 @@ Feature: Login with Valid Credentials
     Then the user clicks on PartnerList
     Then the user clicks on the SchemeDrpDwn
     Then the user click on the SchemeList
+    Then the user click on the SubProduct
+    Then The user click on the SubProductList
+    Then the user click on the BranchDropDown
+    Then the user click on the BranchDropDownList
+    Then the user click on the SalesMangerDropdown
+    Then the user click on the SalesMangerList
+    Then the user click on the NextButton
+    Then the user enter the textName
+    Then the user enter the textPhoneNumber
+    Then the user enter the textLoanAmount
+    Then the user enter the textTenure
+    Then the user enter the textInterest
+    Then the user click on the EmployeTypeDropdown
+    Then the user click on the employmentTypeDropDownList
+    Then the user click on the LoanPurposeCheckBox
+    Then the user click on the CeateLeadBtn
+
+
