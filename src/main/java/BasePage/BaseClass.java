@@ -27,8 +27,10 @@ public class BaseClass
 
 
 import PageObjects.DashBoard;
+import PageObjects.LeadDetails;
 import PageObjects.PartnerDetails;
 import PageObjects.WithOtpCls;
+import StepDefinations.LeadDetailsStep;
 import StepDefinations.WithOtpLogin;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -41,8 +43,9 @@ public class BaseClass
 
     public static WebDriver driver;
     public static DashBoard db;
-    public static PartnerDetails parnter;
+    public static PartnerDetails partner;
    public static  WithOtpCls LoginWithOtp;
+   public static LeadDetails LeadDetailsPage;
 
 
 
@@ -64,8 +67,9 @@ public class BaseClass
 
 
         db=new DashBoard(driver);
-        parnter=new PartnerDetails(driver);
+        partner=new PartnerDetails(driver);
        LoginWithOtp=new WithOtpCls(driver);
+        LeadDetailsPage=new LeadDetails(driver);
 
 
 
