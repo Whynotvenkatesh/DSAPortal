@@ -15,7 +15,6 @@ public class LeadDetails extends BaseClass {
         PageFactory.initElements(driver, this);
     }
 
-
     @FindBy(xpath = "//input[@id='name']")
     WebElement textName;
 

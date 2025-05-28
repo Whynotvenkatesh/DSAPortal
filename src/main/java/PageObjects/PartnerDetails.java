@@ -24,91 +24,46 @@ public class PartnerDetails extends BaseClass
 
     //Elements
 
+    @FindBy(xpath ="//input[@id='partnerName']")
+    WebElement partnerdropdown;
+
+
+    @FindBy(xpath ="//li[@id='partnerName-option-0']")
+    WebElement PartnerList;
+
     @FindBy(xpath="//div[@id='scheme']")
-    WebElement SchemeDropdown;
+    WebElement SchemeDrpDwn;
 
-    @FindBy(xpath = "//li[normalize-space()='New']")
-    WebElement SchemeOptions;
+@FindBy(xpath="//li[normalize-space()='New']")
+WebElement SchemeList;
 
-
-    @FindBy(xpath = "//div[@id='subProduct']")
-    WebElement SubProductDropdown;
-
-    @FindBy(xpath ="//li[normalize-space()='Residential']")
-    WebElement SubProductOptions;
-
-
-    @FindBy(xpath = "//input[@id='branch']")
-    WebElement BranchDropdown;
-
-    @FindBy(xpath = "//li[@id='branch-option-0']")
-    WebElement BranchOptions;
-    //li[normalize-space()='INDIQUBE LEXINGTON AUDUGODI- BENGALURU']
-
-
-    @FindBy(xpath = "//input[@id='salesManager']")
-    WebElement SalesManagerDropdown;
-
-    @FindBy(xpath="//li[@id='salesManager-option-0']")
-    WebElement SalesManagerOptions;
-    //li[normalize-space()='devi (devi@gmail.com)']
-
-
-    @FindBy(xpath="//button[normalize-space()='Next']")
-    WebElement NextBtn;
-
+@FindBy(xpath ="//div[@id='subProduct']")
+WebElement SubProduct;
 
     //Methods
 
-    public void setSchemeDropdown()
-{
-    SchemeDropdown.click();
-}
+    public void setPartnerdropdown()
+    {
+        partnerdropdown.click();
+    }
 
-public void setSchemeOptions()
-{
- SchemeOptions.click();
-}
+    public void setPartnerList()
+    {
+        PartnerList.click();
+    }
 
-public void setSubProductDropdown()
-{
-    SubProductDropdown.click();
-}
+    public void setSchemeDrpDwn()
+    {
+        SchemeDrpDwn.click();
+    }
 
-public void setSubProductOptions()
-{
-    SubProductOptions.click();
-}
+    public void setSchemeList()
+    {
+        SchemeList.click();
+    }
 
-public void setBranchDropdown()
-{
-    BranchDropdown.click();
-}
-
-public void setBranchOptions()
-{
-    BranchOptions.click();
-}
-
-public void setSalesManagerDropdown()
-{
-    SalesManagerDropdown.click();
-}
-
-public void setSalesManagerOptions()
-{
-    SalesManagerOptions.click();
-}
-
-public void setNextBtn()
-{
-
-//    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//    wait.until(ExpectedConditions.elementToBeClickable(NextBtn)).click();
-//    NextBtn.click();
-
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".loader")));
-    NextBtn.click();
-}
+    public void setSubProduct()
+    {
+        SubProduct.click();
+    }
 }

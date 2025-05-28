@@ -27,10 +27,9 @@ public class BaseClass
 
 
 import PageObjects.DashBoard;
-import PageObjects.LoginPage;
-import PageObjects.LoginwithOtp;
 import PageObjects.PartnerDetails;
-import StepDefinations.PartnerDetailsStep;
+import PageObjects.WithOtpCls;
+import StepDefinations.WithOtpLogin;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -41,14 +40,14 @@ public class BaseClass
 {
 
     public static WebDriver driver;
-    public static LoginPage loginPage;
     public static DashBoard db;
     public static PartnerDetails parnter;
+   public static  WithOtpCls LoginWithOtp;
 
-    public  static LoginwithOtp loginuser;
 
 
-    public static void launchdriver()  {
+    public static void launchdriver()
+    {
         // Set Chrome Options (optional)
         ChromeOptions options = new ChromeOptions();
         // options.addArguments("--headless"); // Uncomment to run in headless mode
@@ -63,11 +62,11 @@ public class BaseClass
         // Open login URL
         driver.get("https://portal.uat.creditsaison.xyz/signin");
 
-        loginPage=new LoginPage(driver);
+
         db=new DashBoard(driver);
         parnter=new PartnerDetails(driver);
+       LoginWithOtp=new WithOtpCls(driver);
 
-        loginuser=new LoginwithOtp(driver);
 
 
 
