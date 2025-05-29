@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="086ad040-fefd-4e60-bd39-35ac47c7d2d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ScreenShots.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StepDefinations/LeadDetailsStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasePage/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasePage/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Features/WithOtp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Features/WithOtp.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LeadDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LeadDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/PartnerDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/PartnerDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinations/PartnerDetailsStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepDefinations/PartnerDetailsStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BasePage/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BasePage/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinations/LeadDetailsStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepDefinations/LeadDetailsStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/LeadDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/LeadDetails.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/PartnerDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/PartnerDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/PartnerDetailsStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StepDefinations/PartnerDetailsStep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/LeadDetailsStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StepDefinations/LeadDetailsStep.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

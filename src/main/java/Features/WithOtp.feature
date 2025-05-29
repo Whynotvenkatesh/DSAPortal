@@ -29,5 +29,16 @@ Feature: Login with Valid Credentials
     Then the user click on the employmentTypeDropDownList
     Then the user click on the LoanPurposeCheckBox
     Then the user click on the CeateLeadBtn
+    Then the user  click on the SendOtpButton
+    Then the user enter the EnterOpt1
+    Then the user enter the EnterOtp2
+    Then the user enter the EnterOtp3
+    Then the user enter the EnterOtp4
+    Then the user enter the EnterOtp5
+    Then the user enter the EnterOtp6
+
+
+
+
 
 

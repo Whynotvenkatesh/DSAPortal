@@ -50,4 +50,35 @@ public class LeadDetailsStep extends BaseClass
     {
         LeadDetailsPage.setCeateLeadBtn();
     }
+
+
+    @Then("the user  click on the SendOtpButton")
+    public void the_user_click_on_the_send_otp_button() {
+        LeadDetailsPage.setSendOtpButton();
+    }
+    @Then("the user enter the EnterOpt1")
+    public void the_user_enter_the_enter_opt1() {
+        LeadDetailsPage.setEnterOpt1();
+    }
+    @Then("the user enter the EnterOtp2")
+    public void the_user_enter_the_enter_otp2() {
+        LeadDetailsPage.setEnterOpt2();
+    }
+    @Then("the user enter the EnterOtp3")
+    public void the_user_enter_the_enter_otp3() {
+        LeadDetailsPage.setEnterOpt3();
+    }
+    @Then("the user enter the EnterOtp4")
+    public void the_user_enter_the_enter_otp4() {
+        LeadDetailsPage.setEnterOpt4();
+    }
+    @Then("the user enter the EnterOtp5")
+    public void the_user_enter_the_enter_otp5() {
+        LeadDetailsPage.setEnterOpt5();
+    }
+    @Then("the user enter the EnterOtp6")
+    public void the_user_enter_the_enter_otp6() {
+        LeadDetailsPage.setEnterOpt6();
+    }
+
 }

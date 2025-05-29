@@ -4,6 +4,7 @@ import BasePage.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -56,7 +57,7 @@ WebElement SalesMangerDropdown;
 @FindBy(xpath ="//li[@id='salesManager-option-3']")
 WebElement SalesManagerList;
 
-@FindBy(xpath ="//button[@id=':r13:']")
+@FindBy(xpath ="//button[normalize-space()='Next']")
 WebElement NextButton;
 
 
@@ -115,8 +116,12 @@ WebElement NextButton;
 
     public void setNextButton()
     {
-        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
         wait.until(ExpectedConditions.elementToBeClickable(NextButton));
-        NextButton.click();
+
+        Actions act = new Actions(driver);
+        act.moveToElement(NextButton).click().build().perform();
     }
 }
