@@ -26,10 +26,7 @@ public class BaseClass
 */
 
 
-import PageObjects.DashBoard;
-import PageObjects.LeadDetails;
-import PageObjects.PartnerDetails;
-import PageObjects.WithOtpCls;
+import PageObjects.*;
 import StepDefinations.LeadDetailsStep;
 import StepDefinations.WithOtpLogin;
 import org.openqa.selenium.WebDriver;
@@ -46,6 +43,7 @@ public class BaseClass
     public static PartnerDetails partner;
    public static  WithOtpCls LoginWithOtp;
    public static LeadDetails LeadDetailsPage;
+   public static Primary_Applicant primaryApplicantpage;
 
 
 
@@ -70,6 +68,7 @@ public class BaseClass
         partner=new PartnerDetails(driver);
        LoginWithOtp=new WithOtpCls(driver);
         LeadDetailsPage=new LeadDetails(driver);
+        primaryApplicantpage=new Primary_Applicant(driver);
 
 
 
