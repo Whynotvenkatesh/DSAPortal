@@ -27,8 +27,6 @@ public class BaseClass
 
 
 import PageObjects.*;
-import StepDefinations.LeadDetailsStep;
-import StepDefinations.WithOtpLogin;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -39,10 +37,8 @@ public class BaseClass
 {
 
     public static WebDriver driver;
-    public static DashBoard db;
-    public static PartnerDetails partner;
+   // public static DashBoard DashboardpageDetails;
    public static  WithOtpCls LoginWithOtp;
-   public static LeadDetails LeadDetailsPage;
    public static Primary_Applicant primaryApplicantpage;
 
 
@@ -64,10 +60,8 @@ public class BaseClass
         driver.get("https://portal.uat.creditsaison.xyz/signin");
 
 
-        db=new DashBoard(driver);
-        partner=new PartnerDetails(driver);
+       // DashboardpageDetails=new DashBoard(driver);
        LoginWithOtp=new WithOtpCls(driver);
-        LeadDetailsPage=new LeadDetails(driver);
         primaryApplicantpage=new Primary_Applicant(driver);
 
 

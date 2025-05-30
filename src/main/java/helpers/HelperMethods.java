@@ -1,8 +1,8 @@
-package HelperMethods;
+package helpers;
 import org.apache.commons.lang3.RandomStringUtils;
 import java.util.Random;
 
-public class PAN_Numbers
+public class HelperMethods
 {
 
 
@@ -13,7 +13,7 @@ public class PAN_Numbers
          *
          * @return A randomly generated PAN number string with 'P' at the 4th position.
          */
-        public String generateRandomPanWithPStatus()
+        public static String generateRandomPanWithPStatus()
         {
             // 1. First 3 characters: Random uppercase letters
             String firstThreeChars = RandomStringUtils.randomAlphabetic(3).toUpperCase();
@@ -38,7 +38,7 @@ public class PAN_Numbers
 
         public static void main(String[] args)
         {
-            PAN_Numbers generator = new PAN_Numbers();
+            HelperMethods generator = new HelperMethods();
             System.out.println("Generated PAN with 'P': " + generator.generateRandomPanWithPStatus());
             System.out.println("Generated PAN with 'P': " + generator.generateRandomPanWithPStatus());
             System.out.println("Generated PAN with 'P': " + generator.generateRandomPanWithPStatus());
