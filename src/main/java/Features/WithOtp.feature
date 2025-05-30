@@ -36,7 +36,37 @@ Feature: Login with Valid Credentials
     Then the user enter the EnterOtp4
     Then the user enter the EnterOtp5
     Then the user enter the EnterOtp6
-
+    Then the user click on the ApplicantTypeDropDown
+    Then the user click on the ApplicantTypeDropDownLists
+    Then the user click on the CompanyPan
+    Then the user click on the EntityTypeDropDown
+    Then the user click on the EntityTypeDropDownLists
+    Then the user click on the VerifyButtonforCompanyPAN
+    Then the user enter the DateOfRegistration
+    Then the user click on the BusinessTypeDroDown
+    Then the user click on the BusinessTypeDroDownLists
+    Then the user enter the UdyamText
+    Then the user enter the EmailText
+    Then the user click on the VerifyButtonEmail
+    Then the user enter the operatingOfficeAddressLine1Text
+    Then the user enter the operatingOfficeAddressLine2Text
+    Then the user enter the operatingOfficeAddressPincodeText
+    Then the user click on the operatingOfficeAddressOwnershipDropDown
+    Then the user click on the SelfOwneditem
+    Then the user click on the AddObligationButton
+    Then the user click on the obligationTypeDropDown
+    Then the user click on the obligationTypeDropDownitem
+    Then the user enter the financierText
+    Then the user enter the emiAmountText
+    Then the user enter the accountNumberText
+    Then the user enter the currentOutstandingText
+    Then the user enter the remainingTenureText
+    Then the user click on the obligateDropDown
+    Then the user click on the obligateDropDownitem
+    Then the user click on the closeTypeDropDown
+    Then the user click on the closeTypeDropDownitem
+    Then the user click on the SaveButton
+    Then the user click on the SubmitButton
 
 
 
