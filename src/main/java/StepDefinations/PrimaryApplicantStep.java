@@ -1,10 +1,18 @@
 package StepDefinations;
 
 import BasePage.BaseClass;
+import PageObjects.Primary_Applicant;
 import io.cucumber.java.en.Then;
 
 public class PrimaryApplicantStep extends BaseClass
 {
+
+    @Then("user Adds primary Applicant info")
+    public void userAddsPrimaryApplicantInfo()
+    {
+        primaryApplicantpage.PrimaryApplicantScreen();
+
+    }
 
     @Then("the user click on the ApplicantTypeDropDown")
     public void the_user_click_on_the_applicant_type_drop_down()
@@ -17,7 +25,7 @@ public class PrimaryApplicantStep extends BaseClass
     }
     @Then("the user click on the CompanyPan")
     public void the_user_click_on_the_company_pan() {
-        primaryApplicantpage.setCompanyPan();
+      //  primaryApplicantpage.setCompanyPan();
     }
     @Then("the user click on the EntityTypeDropDown")
     public void the_user_click_on_the_entity_type_drop_down() {

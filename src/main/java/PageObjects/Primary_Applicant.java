@@ -163,11 +163,47 @@ public void setCompanyPan()
 
 
 
-    public void setCompanyPan()
+    public void setCompanyPan(String PanNumber)
     {
-        CompanyPan.sendKeys("DRJPA4090C");
+        CompanyPan.sendKeys(PanNumber);
 
     }
+
+    public void PrimaryApplicantScreen()
+    {
+        EntityTypeDropDown.click();
+        EntityTypeDropDownLists.click();
+        VerifyButtonforCompanyPAN.click();
+        DateOfRegistration.sendKeys("22/01/1967");
+        BusinessTypeDroDown.click();
+        BusinessTypeDroDownLists.click();
+        UdyamText.sendKeys("UDYAM-AD-12-1234567");
+        EmailText.sendKeys("venky@gmail.com");
+        VerifyButtonEmail.click();
+        operatingOfficeAddressLine1Text.sendKeys("Madiwala");
+        operatingOfficeAddressLine2Text.sendKeys("28th main road");
+        operatingOfficeAddressPincodeText.sendKeys("560095");
+        operatingOfficeAddressOwnershipDropDown.click();
+        SelfOwneditem.click();
+        AddObligationButton.click();
+        obligationTypeDropDown.click();
+        obligationTypeDropDownitem.click();
+        financierText.sendKeys("80798");
+        emiAmountText.sendKeys("8000");
+        accountNumberText.sendKeys("987678987678876");
+        currentOutstandingText.sendKeys("6");
+        remainingTenureText.sendKeys("12");
+        obligateDropDown.click();
+        obligateDropDownitem.click();
+        closeTypeDropDown.click();
+        closeTypeDropDownitem.click();
+        SaveButton.click();
+        SubmitButton.click();
+
+    }
+
+
+
 
 public void setEntityTypeDropDown()
 {

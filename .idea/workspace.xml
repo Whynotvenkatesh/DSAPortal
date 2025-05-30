@@ -5,13 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="086ad040-fefd-4e60-bd39-35ac47c7d2d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HelperMethods/PAN_Numbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Primary_Applicant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StepDefinations/PrimaryApplicantStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BasePage/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasePage/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Features/WithOtp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Features/WithOtp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelperMethods/PAN_Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helpers/HelperMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/DashBoard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LeadDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/PartnerDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Primary_Applicant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Primary_Applicant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ScreenShots.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/WithOtpCls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/WithOtpCls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinations/DashBoardStep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinations/LeadDetailsStep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinations/PartnerDetailsStep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinations/PrimaryApplicantStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepDefinations/PrimaryApplicantStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinations/WithOtpLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepDefinations/WithOtpLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BasePage/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BasePage/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HelperMethods/PAN_Numbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/DashBoard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/LeadDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/PartnerDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Primary_Applicant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/Primary_Applicant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/ScreenShots.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/WithOtpCls.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/WithOtpCls.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/DashBoardStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/LeadDetailsStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/PartnerDetailsStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/PrimaryApplicantStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StepDefinations/PrimaryApplicantStep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/WithOtpLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StepDefinations/WithOtpLogin.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +45,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,9 +74,14 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "build.tools"
+    "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="PageObjects" />
+    </key>
+  </component>
   <component name="RunManager" selected="Cucumber Java.Feature: WithOtp">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
