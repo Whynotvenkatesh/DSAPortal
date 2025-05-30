@@ -136,7 +136,7 @@ public class WithOtpCls extends BaseClass {
     WebElement EnterOpt6;
 
 
-    //Primary Applicants
+    //Primary Applicants Screen
 
     @FindBy(xpath = "//div[@id='applicantType']")
     WebElement ApplicantTypeDropDown;
