@@ -6,7 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="086ad040-fefd-4e60-bd39-35ac47c7d2d6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasePage/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasePage/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Primary_Applicant.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/WithOtpCls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/WithOtpCls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinations/PrimaryApplicantStep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinations/WithOtpLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepDefinations/WithOtpLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestRunner/Testrunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestRunner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helpers/HelperMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helpers/HelperMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BasePage/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BasePage/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Primary_Applicant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/WithOtpCls.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/WithOtpCls.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/PrimaryApplicantStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StepDefinations/WithOtpLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StepDefinations/WithOtpLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestRunner/Testrunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestRunner/Testrunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/helpers/HelperMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helpers/HelperMethods.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,23 +48,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Feature: Login.executor": "Run",
-    "Cucumber Java.Feature: LoginOtp.executor": "Run",
-    "Cucumber Java.Feature: WithOtp.executor": "Run",
-    "Cucumber Java.Scenario: Scenario: Successful Login with Valid Emailid.executor": "Run",
-    "Cucumber Java.Scenario: Successful Login with Valid Credentials.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Automate__DSA123",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/venkateshk/Documents/GitHub/DSAPortal",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "actions.on.save"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: Login.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: LoginOtp.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: WithOtp.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Scenario: Successful Login with Valid Emailid.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Successful Login with Valid Credentials.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Automate__DSA123&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/venkateshk/Documents/GitHub/DSAPortal&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="PageObjects" />
@@ -111,25 +126,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Scenario: Successful Login with Valid Emailid" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/java/Features/LoginOtp.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="DSAPortal" />
-      <option name="NAME_FILTER" value="^Scenario\: Successful Login with Valid Emailid$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Scenario\: Successful Login with Valid Emailid$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Scenario: Successful Login with Valid Emailid" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: Successful Login with Valid Credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/java/Features/WithOtp.feature" />
@@ -150,13 +146,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DSAPortal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: WithOtp" />
+        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: Successful Login with Valid Credentials" />
         <item itemvalue="Cucumber Java.Feature: LoginOtp" />
         <item itemvalue="Cucumber Java.Feature: Login" />
-        <item itemvalue="Cucumber Java.Scenario: Scenario: Successful Login with Valid Emailid" />
       </list>
     </recent_temporary>
   </component>

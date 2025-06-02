@@ -12,11 +12,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class WithOtpCls extends BaseClass {
+    // No need to declare WebDriver driver; again, it's inherited from BaseClass
     WebDriver driver;
 
     public WithOtpCls(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+        // 'this.driver = driver;' is not needed here if driver is static in BaseClass and used directly.
+        // If driver in BaseClass was not static, you'd initialize it here.
     }
 
     //LoginScreen
@@ -235,7 +238,117 @@ public class WithOtpCls extends BaseClass {
 
 
     public void LoginPagewithOtp() {
+        // Use your real email for login if it's static
+        userEmail.sendKeys("vaibhav.kohli@creditsaison-in.com");
+        SendBtn.click();
+        EnterOtp.sendKeys("876321");
+        BaseClass.helpers.waitForElementClickable(VerifyOtpbtn, 10).click();
 
+        // DashBaord Details
+        BaseClass.helpers.waitForElementClickable(ChooseDropDown, 10).click();
+        BaseClass.helpers.waitForElementClickable(LoanAgainstProperty, 10).click();
+        BaseClass.helpers.waitForElementClickable(AddApplicationBtn, 10).click();
+
+        // Partner Details
+        BaseClass.helpers.waitForElementClickable(partnerdropdown, 10).click();
+        BaseClass.helpers.waitForElementClickable(PartnerList, 10).click();
+        BaseClass.helpers.waitForElementClickable(SchemeDrpDwn, 10).click();
+        BaseClass.helpers.waitForElementClickable(SchemeList, 10).click();
+
+        // **FIX for SubProduct.click() - using JavaScript click**
+        // First click the dropdown container to open options
+        BaseClass.helpers.waitForElementClickable(SubProduct, 10).click();
+        // Then click the specific list item. Using JS click for robustness.
+        BaseClass.helpers.javaScriptClick(BaseClass.helpers.waitForElementClickable(SubProductList, 10));
+        BaseClass.helpers.waitForElementClickable(BranchDropDown, 10).click();
+        BaseClass.helpers.waitForElementClickable(BranchDropDownList, 10).click();
+        BaseClass.helpers.waitForElementClickable(SalesMangerDropdown, 10).click();
+        BaseClass.helpers.waitForElementClickable(SalesManagerList, 10).click();
+
+        // Action for NextButton
+        Actions act = new Actions(driver);
+        act.moveToElement(BaseClass.helpers.waitForElementClickable(NextButton, 30)).click().build().perform();
+
+        // Lead Details - Using HelperMethods for random data
+        textName.sendKeys(helpers.generateRandomUsername()); // Use generated username
+        textPhoneNumber.sendKeys(helpers.generateRandomPhoneNumber()); // Use generated phone number
+        textLoanAmount.sendKeys("8000000");
+        textTenure.sendKeys("35");
+        textInterest.sendKeys("45");
+        BaseClass.helpers.waitForElementClickable(EmployeTypeDropdown, 10).click();
+        BaseClass.helpers.waitForElementClickable(employmentTypeDropDownList, 10).click();
+        BaseClass.helpers.waitForElementClickable(LoanPurposeCheckBox, 10).click();
+
+        // Action for CreateLeadBtn - using JavaScript click for robustness
+        act.moveToElement(BaseClass.helpers.waitForElementClickable(CeateLeadBtn, 30)).click().build().perform();
+
+        BaseClass.helpers.waitForElementClickable(SendOtpButton, 10).click();
+        EnterOpt1.sendKeys("1");
+        EnterOpt2.sendKeys("2");
+        EnterOpt3.sendKeys("3");
+        EnterOpt4.sendKeys("4");
+        EnterOpt5.sendKeys("5");
+        EnterOpt6.sendKeys("6");
+
+        // Applicant Details
+        BaseClass.helpers.waitForElementClickable(ApplicantTypeDropDown, 10).click();
+        BaseClass.helpers.waitForElementClickable(ApplicantTypeDropDownLists, 10).click();
+        CompanyPan.sendKeys("KTZPA4560F");
+        BaseClass.helpers.waitForElementClickable(EntityTypeDropDown, 10).click();
+        BaseClass.helpers.waitForElementClickable(EntityTypeDropDownLists, 30).click(); // Corrected, removed duplicate
+        BaseClass.helpers.waitForElementClickable(VerifyButtonforCompanyPAN, 10).click();
+        DateOfRegistration.sendKeys("22/01/1967");
+        BaseClass.helpers.waitForElementClickable(BusinessTypeDroDown, 10).click();
+        BaseClass.helpers.waitForElementClickable(BusinessTypeDroDownLists, 10).click();
+        UdyamText.sendKeys("UDYAM-AD-12-1234567");
+        EmailText.sendKeys(helpers.generateRandomEmail()); // Use generated email
+        BaseClass.helpers.waitForElementClickable(VerifyButtonEmail, 10).click();
+        operatingOfficeAddressLine1Text.sendKeys("Madiwala");
+        operatingOfficeAddressLine2Text.sendKeys("28th main road");
+        operatingOfficeAddressPincodeText.sendKeys("560095");
+        BaseClass.helpers.waitForElementClickable(operatingOfficeAddressOwnershipDropDown, 10).click();
+        BaseClass.helpers.waitForElementClickable(SelfOwneditem, 10).click();
+        BaseClass.helpers.waitForElementClickable(AddObligationButton, 10).click();
+        BaseClass.helpers.waitForElementClickable(obligationTypeDropDown, 10).click();
+        BaseClass.helpers.waitForElementClickable(obligationTypeDropDownitem, 10).click();
+        financierText.sendKeys("80798");
+        emiAmountText.sendKeys("8000");
+        accountNumberText.sendKeys("987678987678876");
+        currentOutstandingText.sendKeys("6");
+        remainingTenureText.sendKeys("12");
+        BaseClass.helpers.waitForElementClickable(obligateDropDown, 10).click();
+        BaseClass.helpers.waitForElementClickable(obligateDropDownitem, 10).click();
+        BaseClass.helpers.waitForElementClickable(closeTypeDropDown, 10).click();
+        BaseClass.helpers.waitForElementClickable(closeTypeDropDownitem, 10).click();
+        BaseClass.helpers.waitForElementClickable(SaveButton, 10).click();
+        BaseClass.helpers.waitForElementClickable(SubmitButton, 10).click();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    public void LoginPagewithOtp() {
+        // Use your real email for login if it's static
         CharSequence Email = "vaibhav.kohli@creditsaison-in.com";
         userEmail.sendKeys(Email);
         SendBtn.click();
@@ -330,7 +443,7 @@ public class WithOtpCls extends BaseClass {
 
 }
 
-
+*/
 
 
 
