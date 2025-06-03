@@ -25,7 +25,7 @@ public class HelperMethods {
     // --- WebDriver-dependent Helper Methods ---
     // Waits for an element to be clickable on the page.
     public WebElement waitForElementClickable(WebElement element, int timeoutInSeconds) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2000));
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
@@ -45,6 +45,7 @@ public class HelperMethods {
     public void scrollToElement(WebElement element) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
     }
+
 
     //Takes a screenshot and saves it to a specified folder.
     public void takeScreenshot(String scenarioName, String status) {

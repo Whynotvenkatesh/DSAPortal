@@ -189,7 +189,7 @@ public class WithOtpCls extends BaseClass {
     @FindBy(xpath = "//div[@id='operatingOfficeAddressOwnership']")
     WebElement operatingOfficeAddressOwnershipDropDown;
 
-    @FindBy(xpath = "//li[normalize-space()='Self Owned']']")
+    @FindBy(xpath = "//li[normalize-space()='Self Owned']")
     WebElement SelfOwneditem;
 
     // Add Obligation
@@ -236,6 +236,189 @@ public class WithOtpCls extends BaseClass {
     @FindBy(xpath = "//button[contains(text(),'Submit')]")
     WebElement SubmitButton;
 
+    @FindBy(xpath = "(//button[normalize-space()='Co Applicants'])[1]")
+    WebElement Coapplicantbutton;
+
+    //Add applicant
+
+    @FindBy(xpath = "//button[normalize-space()='+ Add Applicant']")
+    WebElement AddApplicantButton;
+
+    @FindBy(xpath = "//div[@id='applicantType']")
+    WebElement applicantTypedrop;
+
+    @FindBy(xpath = "//li[normalize-space()='Individual']")
+    WebElement Individuallist;
+
+    @FindBy(xpath = "//div[@id='type']")
+    WebElement typedropdown;
+
+    //Financial option
+
+    @FindBy(xpath = "//li[normalize-space()='Financial']")
+    WebElement Financialitem;
+
+    @FindBy(xpath = "//input[@id='panNumber']")
+    WebElement PanNumberText;
+
+    @FindBy(xpath = "(//button[normalize-space()='Verify'])[1]")
+    WebElement VerifyPanButton;
+
+    @FindBy(xpath = "//input[@id='dob']")
+    WebElement dobText; //22/01/1967
+
+    @FindBy(xpath = "//div[@id='partyRelation']")
+    WebElement RelationshipwithApplDropdown;
+
+    @FindBy(xpath = "//li[normalize-space()='Mother']")
+    WebElement RelationshipwithApplDropdownitem;
+
+    @FindBy(xpath = "//input[@id='phoneNumber']")
+    WebElement phoneNumberText;
+
+    @FindBy(xpath = "//input[@id='emailId']")
+    WebElement EmailIdText;
+
+    @FindBy(xpath = "//input[@id='otherOvd']")
+    WebElement OtherOvdDropdown;
+
+    @FindBy(xpath = "")
+    WebElement AadhaarLastdigits;
+
+    @FindBy(xpath = "//input[@id='aadhaarLastFourDigit']")
+    WebElement aadhaarLastFourDigit;
+
+    @FindBy(xpath = "(//button[normalize-space()='Next'])[1]")
+    WebElement CoappNextButton;
+
+    //Current Address -co-app
+    @FindBy(xpath = "(//textarea[@id='currentAddressLine1']")
+    WebElement coapplicantcurrentAddressLine1;
+
+    @FindBy(xpath = "//textarea[@id='currentAddressLine2']")
+    WebElement coapplicantcurrentAddressLine2;
+
+    @FindBy(xpath = "//input[@id='currentAddressPincode']")
+    WebElement coapplicantcurrentAddressPincode;
+
+    @FindBy(xpath = "//div[@id='currentAddressOwnership']")
+    WebElement coapplicantcurrentAddressOwnershipDrodDown;
+
+    @FindBy(xpath = "//li[normalize-space()='Self Owned']")
+    WebElement coapplicantcurrentAddressOwnershipDrodDownitem;
+
+    @FindBy(xpath = "(//input[@name='isAddressSame'])[1]")
+    WebElement coapplicantcurrentAddressisAddressSame;
+
+    @FindBy(xpath = "(//input[@name='isCorrespondingAddressSameAsCurrentAddress'])[1]")
+    WebElement coapplicantisSameAsCurrentAddress;
+
+    @FindBy(xpath = "(//button[normalize-space()='Next'])[1]")
+    WebElement coapplicantNextButton;
+
+    @FindBy(xpath = "//button[normalize-space()='Next']")
+    WebElement coapplicantNextButton2;
+
+    @FindBy(xpath = "//div[@id='employmentType']")
+    WebElement coapplicantemploymentType;
+
+    @FindBy(xpath = "//li[normalize-space()='Salaried']")
+    WebElement coapplicantSalaried;
+
+//Employee Details
+
+    @FindBy(xpath = "//input[@id='employerName']")
+    WebElement coapplicantemployerName;
+
+    @FindBy(xpath = "")
+    WebElement coapplicantemployeritem;
+
+    @FindBy(xpath = "//input[@id='monthlyIncome']")
+    WebElement coapplicanmonthlyIncome;
+
+    @FindBy(xpath = "//input[@id='email']")
+    WebElement coapplicantOfficialemail;
+
+    @FindBy(xpath = "//input[@id='designation']")
+    WebElement coapplicantdesignation;
+
+    //Coapplicant Employer address
+
+    @FindBy(xpath = "//textarea[@id='officeAddressLine1']")
+    WebElement coapplicantofficeAddressLine1;
+
+    @FindBy(xpath = "//textarea[@id='officeAddressLine2']")
+    WebElement coapplicantofficeAddressLine2;
+
+    @FindBy(xpath = "//input[@id='officeAddressPincode']")
+    WebElement coapplicantofficeAddressPincode;
+
+    @FindBy(xpath = "//div[@id='officeAddressOwnership']")
+    WebElement coapplicantofficeAddressOwnership;
+
+    @FindBy(xpath = "(//button[normalize-space()='Submit'])[1]")
+    WebElement coapplicantSubmit;
+
+    @FindBy(xpath = "(//button[normalize-space()='Collateral'])[1]")
+    WebElement coapplicantCollateralbtn;
+
+    @FindBy(xpath = "(//button[normalize-space()='next'])[1]")
+    WebElement DedubpeNextBtn;
+
+    @FindBy(xpath = "//button[normalize-space()='+ Add Collateral']")
+    WebElement AddCollateralbtn;
+
+    @FindBy(xpath = "(//div[@id='applicants'])[1]")
+    WebElement CollOwnerNameDropDown;
+
+    @FindBy(xpath = "(//input[@type='checkbox'])[2]")
+    WebElement Collcheckbox2;
+
+    @FindBy(xpath = "//div[@id='collateralType']")
+    WebElement collateralTypeDropdown;
+
+    @FindBy(xpath = "//li[normalize-space()='Residential']")
+    WebElement ResidentialDropDownitem;
+
+    @FindBy(xpath = "//div[@id='collateralSubType']")
+    WebElement collateralSubTypeDroDown;
+
+    @FindBy(xpath = "//li[normalize-space()='Land']")
+    WebElement collateralSubTypeDroDownitem;
+
+    @FindBy(xpath = "//div[@id='collateralStatus']")
+    WebElement collateralStatus;
+
+    @FindBy(xpath = "//li[normalize-space()='Self Occupied']")
+    WebElement SelfOccupied;
+
+    @FindBy(xpath = "//div[@id='stageOfUnderConstruction']")
+    WebElement stageOfUnderConstruction;
+
+    @FindBy(xpath = "//li[normalize-space()='Ready']")
+    WebElement Ready;
+
+    @FindBy(xpath = "//input[@value='sqFt']")
+    WebElement sqFtcheckbox;
+
+    @FindBy(xpath = "//input[@id='plotArea']")
+    WebElement plotAreatext;
+
+    @FindBy(xpath = "//input[@id='pincode']")
+    WebElement Collpincode;
+
+    @FindBy(xpath = "//textarea[@id='streetName']")
+    WebElement streetNametext;
+
+    @FindBy(xpath = "//input[@id='landMark']")
+    WebElement landMarktext;
+
+    @FindBy(xpath = "(//button[normalize-space()='Save'])[1]")
+    WebElement CollSavebtn;
+
+    //Documents upload
+    @FindBy(xpath = "(//button[normalize-space()='Documents'])[1]")
+    WebElement DocumentsBtn;
 
     public void LoginPagewithOtp() {
         // Use your real email for login if it's static
@@ -277,8 +460,9 @@ public class WithOtpCls extends BaseClass {
         textInterest.sendKeys("45");
         BaseClass.helpers.waitForElementClickable(EmployeTypeDropdown, 10).click();
         BaseClass.helpers.waitForElementClickable(employmentTypeDropDownList, 10).click();
-        BaseClass.helpers.waitForElementClickable(LoanPurposeCheckBox, 10).click();
-
+        // BaseClass.helpers.javaScriptClick(BaseClass.helpers.waitForElementClickable(LoanPurposeCheckBox, 10));
+        // BaseClass.helpers.waitForElementClickable(LoanPurposeCheckBox, 10).click();
+        LoanPurposeCheckBox.click();
         // Action for CreateLeadBtn - using JavaScript click for robustness
         act.moveToElement(BaseClass.helpers.waitForElementClickable(CeateLeadBtn, 30)).click().build().perform();
 
@@ -292,8 +476,10 @@ public class WithOtpCls extends BaseClass {
 
         // Applicant Details
         BaseClass.helpers.waitForElementClickable(ApplicantTypeDropDown, 10).click();
-        BaseClass.helpers.waitForElementClickable(ApplicantTypeDropDownLists, 10).click();
-        CompanyPan.sendKeys("KTZPA4560F");
+        //BaseClass.helpers.waitForElementClickable(ApplicantTypeDropDownLists, 10).click();
+        BaseClass.helpers.javaScriptClick(BaseClass.helpers.waitForElementClickable(ApplicantTypeDropDownLists, 10));
+        ApplicantTypeDropDownLists.click();
+        CompanyPan.sendKeys("ZTDPR1191S");
         BaseClass.helpers.waitForElementClickable(EntityTypeDropDown, 10).click();
         BaseClass.helpers.waitForElementClickable(EntityTypeDropDownLists, 30).click(); // Corrected, removed duplicate
         BaseClass.helpers.waitForElementClickable(VerifyButtonforCompanyPAN, 10).click();
@@ -306,8 +492,19 @@ public class WithOtpCls extends BaseClass {
         operatingOfficeAddressLine1Text.sendKeys("Madiwala");
         operatingOfficeAddressLine2Text.sendKeys("28th main road");
         operatingOfficeAddressPincodeText.sendKeys("560095");
-        BaseClass.helpers.waitForElementClickable(operatingOfficeAddressOwnershipDropDown, 10).click();
-        BaseClass.helpers.waitForElementClickable(SelfOwneditem, 10).click();
+        //BaseClass.helpers.waitForElementClickable(operatingOfficeAddressOwnershipDropDown, 10).click();
+
+        Actions act2 = new Actions(driver);
+        act2.moveToElement(BaseClass.helpers.waitForElementClickable(operatingOfficeAddressOwnershipDropDown, 30)).click().build().perform();
+        //operatingOfficeAddressOwnershipDropDown.click();
+
+
+        Actions act3 = new Actions(driver);
+        act3.moveToElement(BaseClass.helpers.waitForElementClickable(SelfOwneditem, 30)).click().build().perform();
+
+        Actions act4 = new Actions(driver);
+        act4.moveToElement(BaseClass.helpers.waitForElementClickable(AddObligationButton, 30)).click().build().perform();
+
         BaseClass.helpers.waitForElementClickable(AddObligationButton, 10).click();
         BaseClass.helpers.waitForElementClickable(obligationTypeDropDown, 10).click();
         BaseClass.helpers.waitForElementClickable(obligationTypeDropDownitem, 10).click();
@@ -321,7 +518,15 @@ public class WithOtpCls extends BaseClass {
         BaseClass.helpers.waitForElementClickable(closeTypeDropDown, 10).click();
         BaseClass.helpers.waitForElementClickable(closeTypeDropDownitem, 10).click();
         BaseClass.helpers.waitForElementClickable(SaveButton, 10).click();
-        BaseClass.helpers.waitForElementClickable(SubmitButton, 10).click();
+
+
+        Actions act5 = new Actions(driver);
+        act5.moveToElement(BaseClass.helpers.waitForElementClickable(SubmitButton, 30)).click().build().perform();
+
+        // BaseClass.helpers.waitForElementClickable(SubmitButton, 10).click();
+        BaseClass.helpers.waitForElementClickable(Coapplicantbutton, 10);
+        BaseClass.helpers.waitForElementClickable(AddApplicantButton, 10).click();
+
     }
 }
 
