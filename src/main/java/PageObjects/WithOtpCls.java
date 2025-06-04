@@ -524,9 +524,82 @@ public class WithOtpCls extends BaseClass {
         act5.moveToElement(BaseClass.helpers.waitForElementClickable(SubmitButton, 30)).click().build().perform();
 
         // BaseClass.helpers.waitForElementClickable(SubmitButton, 10).click();
-        BaseClass.helpers.waitForElementClickable(Coapplicantbutton, 10);
-        BaseClass.helpers.waitForElementClickable(AddApplicantButton, 10).click();
+        Actions act6 = new Actions(driver);
+        act5.moveToElement(BaseClass.helpers.waitForElementClickable(Coapplicantbutton, 30)).click().build().perform();
+        // BaseClass.helpers.waitForElementClickable(Coapplicantbutton, 10);
+        AddApplicantButton.click();
 
+        applicantTypedrop.click();
+        Individuallist.click();
+        typedropdown.click();
+        Financialitem.click();
+        PanNumberText.sendKeys("XZEPD3311F");
+        VerifyPanButton.click();
+
+
+        dobText.sendKeys("22/01/1967");
+        RelationshipwithApplDropdown.click();
+        RelationshipwithApplDropdownitem.click();
+        phoneNumberText.sendKeys(helpers.generateRandomPhoneNumber()); // Use generated phone number
+        EmailIdText.sendKeys(helpers.generateRandomEmail());
+        OtherOvdDropdown.click();
+        AadhaarLastdigits.click();
+        aadhaarLastFourDigit.sendKeys("4680");
+        CoappNextButton.click();
+        coapplicantcurrentAddressLine1.sendKeys("Madiwala");
+        coapplicantcurrentAddressLine2.sendKeys("Kengeri");
+        coapplicantcurrentAddressPincode.sendKeys("560095");
+        coapplicantcurrentAddressOwnershipDrodDown.click();
+        coapplicantcurrentAddressOwnershipDrodDownitem.click();
+        coapplicantcurrentAddressisAddressSame.click();
+        coapplicantisSameAsCurrentAddress.click();
+        coapplicantNextButton.click();
+
+        coapplicantNextButton2.click();
+        coapplicantemploymentType.click();
+        coapplicantSalaried.click();
+
+        coapplicantemployerName.sendKeys("Tester");
+        coapplicantemployeritem.click();
+
+        coapplicanmonthlyIncome.sendKeys("9800");
+
+        coapplicantOfficialemail.sendKeys(helpers.generateRandomEmail());
+        coapplicantdesignation.sendKeys("QA");
+
+
+        coapplicantofficeAddressLine1.sendKeys("Hebbala");
+        coapplicantofficeAddressLine2.sendKeys("2nd cross");
+        coapplicantofficeAddressPincode.sendKeys("560095");
+
+        coapplicantofficeAddressOwnership.click();
+        coapplicantSubmit.click();
+
+        coapplicantCollateralbtn.click();
+
+        DedubpeNextBtn.click();
+        AddCollateralbtn.click();
+        CollOwnerNameDropDown.click();
+        Collcheckbox2.click();
+        collateralTypeDropdown.click();
+
+        ResidentialDropDownitem.click();
+        collateralSubTypeDroDown.click();
+
+        collateralSubTypeDroDownitem.click();
+        collateralStatus.click();
+        SelfOccupied.click();
+        stageOfUnderConstruction.click();
+        Ready.click();
+        sqFtcheckbox.click();
+        plotAreatext.sendKeys("542");
+        Collpincode.sendKeys("560095");
+        streetNametext.sendKeys("Mahanagara");
+        landMarktext.sendKeys("Kr market");
+        CollSavebtn.click();
+
+
+        DocumentsBtn.click();
     }
 }
 
@@ -546,109 +619,6 @@ public class WithOtpCls extends BaseClass {
 
 
 
-
-
-
-
-
-    /*
-    public void LoginPagewithOtp() {
-        // Use your real email for login if it's static
-        CharSequence Email = "vaibhav.kohli@creditsaison-in.com";
-        userEmail.sendKeys(Email);
-        SendBtn.click();
-        EnterOtp.sendKeys("876321");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(VerifyOtpbtn)).click();
-
-        //DashBaord Details
-        ChooseDropDown.click();
-        LoanAgainstProperty.click();
-        AddApplicationBtn.click();
-
-
-        //Parnter Details
-        partnerdropdown.click();
-        PartnerList.click();
-        SchemeDrpDwn.click();
-        SchemeList.click();
-        SubProduct.click();
-        SubProductList.click();
-        //wait.until(ExpectedConditions.elementToBeClickable(SubProduct)).click();
-        BranchDropDown.click();
-        BranchDropDownList.click();
-        SalesMangerDropdown.click();
-        SalesManagerList.click();
-        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(30));
-        wait1.until(ExpectedConditions.elementToBeClickable(NextButton));
-        Actions act = new Actions(driver);
-        act.moveToElement(NextButton).click().build().perform();
-
-        //Lead Details
-        textName.sendKeys("Venky");
-        textPhoneNumber.sendKeys("9999791700");
-        textLoanAmount.sendKeys("8000000");
-        textTenure.sendKeys("35");
-        textInterest.sendKeys("45");
-        EmployeTypeDropdown.click();
-        employmentTypeDropDownList.click();
-        LoanPurposeCheckBox.click();
-
-        WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(30));
-        wait.until(ExpectedConditions.elementToBeClickable(CeateLeadBtn));
-        Actions act3 = new Actions(driver);
-        act.moveToElement(CeateLeadBtn).click().build().perform();
-
-        SendOtpButton.click();
-        EnterOpt1.sendKeys("1");
-        EnterOpt2.sendKeys("2");
-        EnterOpt3.sendKeys("3");
-        EnterOpt4.sendKeys("4");
-        EnterOpt5.sendKeys("5");
-        EnterOpt6.sendKeys("6");
-
-        //Applicant Details
-
-        ApplicantTypeDropDown.click();
-        ApplicantTypeDropDownLists.click();
-        // CompanyPan.sendKeys(PanNumber);
-        CompanyPan.sendKeys("KTZPA4560F");
-        EntityTypeDropDown.click();
-        WebDriverWait wait4 = new WebDriverWait(driver, Duration.ofSeconds(30));
-        wait4.until(ExpectedConditions.elementToBeClickable(EntityTypeDropDownLists)).click();
-        EntityTypeDropDownLists.click(); //remove this line
-        VerifyButtonforCompanyPAN.click();
-        DateOfRegistration.sendKeys("22/01/1967");
-        BusinessTypeDroDown.click();
-        BusinessTypeDroDownLists.click();
-        UdyamText.sendKeys("UDYAM-AD-12-1234567");
-        EmailText.sendKeys("venky@gmail.com");
-        VerifyButtonEmail.click();
-        operatingOfficeAddressLine1Text.sendKeys("Madiwala");
-        operatingOfficeAddressLine2Text.sendKeys("28th main road");
-        operatingOfficeAddressPincodeText.sendKeys("560095");
-        operatingOfficeAddressOwnershipDropDown.click();
-        SelfOwneditem.click();
-        AddObligationButton.click();
-        obligationTypeDropDown.click();
-        obligationTypeDropDownitem.click();
-        financierText.sendKeys("80798");
-        emiAmountText.sendKeys("8000");
-        accountNumberText.sendKeys("987678987678876");
-        currentOutstandingText.sendKeys("6");
-        remainingTenureText.sendKeys("12");
-        obligateDropDown.click();
-        obligateDropDownitem.click();
-        closeTypeDropDown.click();
-        closeTypeDropDownitem.click();
-        SaveButton.click();
-        SubmitButton.click();
-
-    }
-
-}
-
-*/
 
 
 

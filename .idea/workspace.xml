@@ -7,10 +7,7 @@
     <list default="true" id="086ad040-fefd-4e60-bd39-35ac47c7d2d6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/WithOtpCls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/WithOtpCls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/helpers/HelperMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helpers/HelperMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BasePage/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BasePage/BaseClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/WithOtpCls.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/WithOtpCls.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/helpers/HelperMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helpers/HelperMethods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports.json" afterDir="false" />
     </list>
@@ -63,7 +60,7 @@
       <recent name="PageObjects" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Successful Login with Valid Credentials">
+  <component name="RunManager" selected="Cucumber Java.Feature: WithOtp">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/java/Features/Login.feature" />
@@ -155,9 +152,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Successful Login with Valid Credentials" />
         <item itemvalue="Cucumber Java.Feature: WithOtp" />
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Successful Login with Valid Credentials" />
         <item itemvalue="Cucumber Java.Feature: LoginOtp" />
         <item itemvalue="Cucumber Java.Feature: Login" />
       </list>
