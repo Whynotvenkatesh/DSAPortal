@@ -527,8 +527,9 @@ public class WithOtpCls extends BaseClass {
         Actions act6 = new Actions(driver);
         act5.moveToElement(BaseClass.helpers.waitForElementClickable(Coapplicantbutton, 30)).click().build().perform();
         // BaseClass.helpers.waitForElementClickable(Coapplicantbutton, 10);
-        AddApplicantButton.click();
 
+        BaseClass.helpers.waitForElementClickable(AddApplicantButton, 10).click();
+        
         applicantTypedrop.click();
         Individuallist.click();
         typedropdown.click();
